@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
 
-    <link rel="stylesheet" href="../default.css">
-    <link rel="stylesheet" href="main_page.css">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/main_page.css">
 </head>
 <body>
     
@@ -15,9 +15,11 @@
         <div class="upper_navbar">
             <div class="logo">
                 <a href="">
-                    <img src="../imagens/sorvil.png" alt="">
+                    <img src="../images/sorvil.png" alt="">
                 </a>
             </div>
+
+            <div style="margin-inline: auto; width: 1px;"></div>
 
             <div class="search_bar_div">
 
@@ -30,10 +32,10 @@
                 </div>
             </div>
 
-            <a class="profile" href="">
-                <div>
+            <a href="">
+                <div class="profile_div"> 
                     <div class="profile_content">
-                        <img class="profile_img" src="../imagens/profile_pic.svg" alt="">
+                        <img class="profile_img" src="../images/profile_pic.svg" alt="">
                         <div class="profile_text_box">
                             <div class="profile_text1">Acessar</div>
                             <div class="profile_text2">Perfil</div>
@@ -41,30 +43,43 @@
                     </div>
                 </div>
             </a>
-
+            
             <a href="">
                 <div class="cart_div">
-                    <div class="cart_content">
-                        <img class="cart_img" src="../imagens/shopping_cart.svg" alt="">
-                        <div class="cart_num">8</div>
+                     <div class="cart_content"> 
+                        <div style="display: flex; margin-inline: auto; position: relative;">
+                            <img class="cart_img" src="../images/shopping_cart.svg" alt="">
+                            <div class="cart_num">1</div>
+                        </div>
                         <div class="cart_text">Carrinho</div>
+                        
+
                     </div>
                 </div>
             </a>
         </div>
             
 
-            
-        
-
-        </div>
 
         <div class="bottom_navbar">
+
+            <label for="menu_checkbox">
+                <div class="menu">
+                    <img src="../images/menu.svg" alt="">
+                </div>
+            </label>
+            <input type="checkbox" id="menu_checkbox" style="display: none;">
+
+            <div style="width: 20px;"></div>
 
             <a href="">
                 <div class="address_div">
                     <div class="address_content">
-
+                        <img src="../images/add_location.svg" alt="">
+                        <div class="address_text_box">
+                            <div class="address_text1">A entrega será feita em ...</div>
+                            <div class="address_text2">Atualizar local </div>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -77,14 +92,23 @@
                 <a href="" class="category_button"><div>Categoria 5</div></a>
             </div>
 
-            <div class="about_and_logout_div">
-                <div class="about_div">
-                    <div class="about_content"></div>
+    
+            <a href="" class="about_div">
+                <div class="about_content">
+                        <img src="../images/info.svg" alt="">
+                        <div class="about_text">Sobre</div>
                 </div>
-                <div class="logout_div">
-                    <div class="logout_content"></div>
+            </a>
+
+            <div style="width: 20px;"></div>
+
+            <a href="" class="logout_div">
+                <div class="logout_content">
+                    <img src="../images/login.svg" alt="">
+                    <div class="logout_text">Sair</div>
                 </div>
-            </div>
+            </a>
+            
 
            
 
@@ -93,7 +117,10 @@
         
     
 
-<div class="red-box"></div>
+<div class="red-box">
+
+
+</div>
 
 
     <a href="../index.html">login</a>
